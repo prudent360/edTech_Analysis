@@ -61,3 +61,11 @@ LIMIT 5;
 SELECT EXTRACT(MONTH FROM released) AS month, SUM(installs) AS total_installs
 FROM mytable
 GROUP BY EXTRACT(MONTH FROM released);
+
+-- 11. What is the total number of installs for apps released in each month of the year?
+
+SELECT EXTRACT(MONTH FROM released) AS month, SUM(installs) AS total_installs
+FROM mytable
+GROUP BY EXTRACT(MONTH FROM released);
+
+
